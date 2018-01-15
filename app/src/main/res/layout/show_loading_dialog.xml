@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <!--<com.wang.avi.AVLoadingIndicatorView-->
+        <!--android:id="@+id/av"-->
+        <!--style="@style/AVLoadingIndicatorView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:indicatorColor="@color/fered"-->
+        <!--app:indicatorName="PacmanIndicator"-->
+        <!--/>-->
+
+        <!--<com.wang.avi.AVLoadingIndicatorView-->
+        <!--android:id="@+id/av1"-->
+        <!--style="@style/AVLoadingIndicatorView.Small"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:indicatorColor="@color/fered"-->
+        <!--app:indicatorName="BallPulseIndicator"-->
+        <!--/>-->
+
+
+        <ImageView
+            android:id="@+id/ivSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="visible"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/loading_dialog_progressbar"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+
+</layout>

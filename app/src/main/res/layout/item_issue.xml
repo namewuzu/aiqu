@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodle"
+            type="com.example.administrator.hjproject.modle.modelview.secendModelView"/>
+
+        <variable
+            name="itemData"
+            type="com.example.administrator.hjproject.bean.TestPojo"/>
+
+        <variable
+            name="itemPosition"
+            type="java.lang.Integer"/>
+    </data>
+
+    <RelativeLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_icon"
+        android:text="@{itemData.test}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textColor="@color/titlecolor"
+        android:textSize="11sp"
+        tools:text="找不到小区"/>
+
+    </RelativeLayout>
+    <!---->
+
+</layout>

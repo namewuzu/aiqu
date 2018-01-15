@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="viewmodle"
+                  type="com.example.administrator.hjproject.modle.modelview.MainModelView"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context="com.example.administrator.hjproject.modle.activity.MainActivity">
+
+        <com.hjm.bottomtabbar.BottomTabBar
+            android:id="@+id/bottom_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tab_divider_background="@color/gray_99"
+            app:tab_divider_height="0.5dp"
+            app:tab_font_size="3sp"
+            app:tab_img_font_padding="0dp"
+            app:tab_img_height="30dp"
+            app:tab_img_width="30dp"
+            app:tab_isshow_divider="true"
+            app:tab_padding_bottom="5dp"
+            app:tab_padding_top="8dp"
+            app:tab_selected_color="@color/red49"
+            app:tab_unselected_color="@color/black" />
+
+
+    </LinearLayout>
+</layout>

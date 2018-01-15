@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">麦宝</string>
+    <string name="txt_downloading">正在下载中</string>
+    <string name="txt_new_version">新版本</string>
+    <string name="txt_download_complete">下载完成</string>
+    <string name="can_not_find_version_name">找不到版本信息</string>
+    <string name="crop__cancel" tools:ignore="ButtonCase">取消</string>
+    <string name="crop__done">完成</string>
+    <string name="loading">请稍后...</string>
+</resources>

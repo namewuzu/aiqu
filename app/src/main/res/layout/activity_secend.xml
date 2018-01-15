@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="viewmodle"
+                  type="com.example.administrator.hjproject.modle.modelview.secendModelView"/>
+    </data>
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.administrator.hjproject.modle.activity.secendActivity">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="测试二"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+         <com.example.administrator.hjproject.widget.recyclerview.PullRecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recycview"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>
