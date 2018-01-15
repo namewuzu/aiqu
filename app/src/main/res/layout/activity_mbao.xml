@@ -30,7 +30,7 @@
                 android:layout_gravity="center"
                 android:text="麦宝"
                 android:textColor="@color/colorPrimary"
-                android:textSize="18sp"/>
+                android:textSize="21sp"/>
 
             <TextView
                 android:layout_marginRight="8dp"
@@ -40,7 +40,7 @@
                 android:layout_gravity="right"
                 android:text="竞拍规则"
                 android:textColor="@color/colorPrimary"
-                android:textSize="14sp"/>
+                android:textSize="15sp"/>
 
 
         </android.support.v7.widget.Toolbar>

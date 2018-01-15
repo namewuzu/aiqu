@@ -3,8 +3,8 @@
 
     <gradient
         android:angle="180"
-        android:endColor="@color/red47"
-        android:startColor="@color/error_stroke_color"/>
+        android:endColor="#F8356D"
+        android:startColor="#FD7545"/>
 
 
 </shape>
