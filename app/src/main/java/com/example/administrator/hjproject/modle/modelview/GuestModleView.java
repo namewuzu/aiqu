@@ -2,8 +2,8 @@ package com.example.administrator.hjproject.modle.modelview;
 
 import com.example.administrator.hjproject.base.BaseViewModle;
 import com.example.administrator.hjproject.databinding.FragmentGuestBinding;
+import com.example.administrator.hjproject.modle.activity.MbaoActivity;
 import com.example.administrator.hjproject.modle.activity.secendActivity;
-import com.example.administrator.hjproject.utils.L;
 
 /**
  * 项目:
@@ -26,6 +26,9 @@ public class GuestModleView extends BaseViewModle<FragmentGuestBinding> {
     }
 
     public void mikeClick() {
+        startActivity(MbaoActivity.class);
+    }
+    public void moneyClick() {
         startActivity(secendActivity.class);
     }
 }
