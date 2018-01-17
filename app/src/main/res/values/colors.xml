@@ -128,6 +128,9 @@
     <color name="crop__selector_pressed">#1a000000</color>
     <color name="crop__selector_focused">#77000000</color>
     <color name="gray_99">#999999</color>
+    <color name="green_19">#19C200</color>
+    <color name="red_ff">#FF295E</color>
+    <color name="black_2a">#2A2A2A</color>
 
 
     <color name="common_pressed">#20000000</color>  <!--白色背景按下去的颜色-->

@@ -5,7 +5,7 @@
 
         <variable
             name="viewmodle"
-            type="com.example.administrator.hjproject.modle.modelview.MineModelView"/>
+            type="com.example.administrator.hjproject.modle.modelview.HistoryModelView"/>
     </data>
 
     <LinearLayout
@@ -19,7 +19,6 @@
 
 
         <android.support.v7.widget.RecyclerView
-            android:layout_marginBottom="25dp"
             android:id="@+id/recycview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

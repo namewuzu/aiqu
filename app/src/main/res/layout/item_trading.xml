@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewmodle"
+            type="com.example.administrator.hjproject.modle.modelview.MineModelView"/>
+
+        <variable
+            name="itemData"
+            type="com.example.administrator.hjproject.bean.TestPojo"/>
+
+        <variable
+            name="itemPosition"
+            type="java.lang.Integer"/>
+    </data>
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:onClick="@{()->viewmodle.onItemClick(itemPosition,itemData)}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{itemData.test}"
+                android:textColor="#2A2A2A"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0.87"
+                android:textColor="#2A2A2A"
+                android:textSize="12sp"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0.87"
+                android:textColor="#2A2A2A"
+                android:textSize="12sp"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0.87"
+                android:textColor="#2A2A2A"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

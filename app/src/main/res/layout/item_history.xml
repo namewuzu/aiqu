@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="viewmodle"
+            type="com.example.administrator.hjproject.modle.modelview.HistoryModelView"/>
+
+        <variable
+            name="itemData"
+            type="com.example.administrator.hjproject.bean.TestPojo.HistoryPojo"/>
+
+        <variable
+            name="itemPosition"
+            type="java.lang.Integer"/>
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="成交价格"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#666666"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:text="@{itemData.two}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#F65549"
+                    android:textSize="12sp"
+                    tools:text="845.56元"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:text="交易单价"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    tools:text="总额麦宝1000个"/>
+
+                <TextView
+                    android:text="@{itemData.four}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#F65549"
+                    android:textSize="15sp"
+                    tools:text="0.90元"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:text="@{itemData.five}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#2A2A2A"
+                    android:textSize="15sp"
+                    tools:text="卖出麦宝4879个"/>
+
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:text="@{itemData.six}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    tools:text="12-12 15:45"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ll_content"
+            android:background="#E5E5E5"/>
+
+    </RelativeLayout>
+</layout>
