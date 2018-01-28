@@ -169,7 +169,6 @@ abstract class BaseViewModle<B : ViewDataBinding> : ViewModleRecycle {
                 .compose(RxSchedulersHelper.applyIoTransformer())
     }
 
-
     inline fun <reified T : Any> RxManagerArray(x: Observable<SuperBean<Results<T>>>): Observable<T> {
         return x.compose(RxJavaHttpHelper.handleResultArray<T>())
                 .compose(RxSchedulersHelper.applyIoTransformer())

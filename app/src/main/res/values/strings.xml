@@ -7,4 +7,22 @@
     <string name="crop__cancel" tools:ignore="ButtonCase">取消</string>
     <string name="crop__done">完成</string>
     <string name="loading">请稍后...</string>
+
+
+
+    <string name="buy">买入</string>
+    <string name="buycout">买入数量</string>
+    <string name="buyprice">买入价格</string>
+    <string name="typebuycout">请输入买入数量</string>
+    <string name="typebuyprice">请输入买入价格</string>
+    <string name="mai">卖出</string>
+    <string name="maicout">卖出数量</string>
+    <string name="maiprice">卖出价格</string>
+    <string name="typemaicout">请输入卖出数量</string>
+    <string name="typemaiprice">请输入卖出价格</string>
+    <string name="totle">总额麦宝</string>
+    <string name="shengyu">剩余麦宝</string>
+    <string name="ge">个</string>
+    <string name="yuan">元</string>
+    <string name="fen">分</string>
 </resources>

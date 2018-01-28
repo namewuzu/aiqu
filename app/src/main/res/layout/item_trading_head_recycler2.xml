@@ -11,7 +11,7 @@
 
         <variable
             name="itemData"
-            type="com.example.administrator.hjproject.bean.CensusPojo.BuyListBean"/>
+            type="com.example.administrator.hjproject.bean.CensusPojo.TradeListBean"/>
 
         <variable
             name="itemPosition"
@@ -24,12 +24,12 @@
         android:orientation="horizontal">
 
         <TextView
-            android:text="买入"
+            android:text="卖出"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:textColor="@color/green_19"
+            android:textColor="@color/red_ff"
             android:textSize="12dp"
             tools:text="卖八"/>
 
@@ -39,7 +39,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="@{itemData.price}"
-            android:textColor="@color/green_19"
+            android:textColor="@color/red_ff"
             android:textSize="12dp"
             tools:text="卖八"/>
 

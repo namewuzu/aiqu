@@ -5,5 +5,6 @@ package com.example.administrator.hjproject.bean;
  */
 
 public class Results<T> {
-    public T result;
+//    public T result;
+    public T list;
 }

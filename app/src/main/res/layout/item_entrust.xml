@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:text="@{itemData.one}"
+                    android:text="@{itemData.type.equals('1')?@string/buy:@string/mai}"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -46,7 +46,7 @@
                     tools:text="买入"/>
 
                 <TextView
-                    android:text="@{itemData.two}"
+                    android:text="@{itemData.times}"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -63,7 +63,7 @@
                 android:layout_marginTop="20dp">
 
                 <TextView
-                    android:text="@{itemData.three}"
+                    android:text='@{@string/totle+itemData.num+@string/ge}'
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -72,7 +72,7 @@
                     tools:text="总额麦宝1000个"/>
 
                 <TextView
-                    android:text="@{itemData.four}"
+                    android:text='@{itemData.price+@string/yuan}'
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -89,7 +89,7 @@
                 android:layout_marginTop="20dp">
 
                 <TextView
-                    android:text="@{itemData.five}"
+                    android:text='@{@string/shengyu+itemData.deal_num+@string/ge}'
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -100,6 +100,7 @@
 
             </RelativeLayout>
             <TextView
+                android:onClick="@{()->viewmodle.ClearClick(itemPosition,itemData)}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"

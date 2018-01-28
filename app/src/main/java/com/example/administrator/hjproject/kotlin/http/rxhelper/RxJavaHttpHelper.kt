@@ -5,6 +5,7 @@ import com.example.administrator.hjproject.bean.Results
 import com.example.administrator.hjproject.bean.SuperBean
 import com.example.administrator.hjproject.kotlin.http.rxexception.NetworkConnectionException
 import com.example.administrator.hjproject.kotlin.http.rxexception.ServerException
+import com.example.administrator.hjproject.utils.ToastUtils
 import rx.Observable
 import rx.functions.Func1
 
@@ -24,9 +25,9 @@ class RxJavaHttpHelper {
                         return@Func1 Observable.error(NetworkConnectionException("网络错误..."))
                     } else {
                       //  if(pojo.issuccess) {
-                            when (pojo.status) {
+                            when (pojo.code) {
                             //创建一个观察者
-                                200 -> {
+                                0 -> {
                                     if (pojo.data == null) {
                                         return@Func1 Observable.error(NetworkConnectionException("网络错误..."))
                                     } else {
@@ -34,9 +35,10 @@ class RxJavaHttpHelper {
                                     }
                                 }
                                // 203 -> IntentUtils.toSignActivity()
+                                401 -> ToastUtils.showShort("錯誤")
 
                             }
-                            Observable.error<T>(ServerException(pojo.status, pojo.message))
+                            Observable.error<T>(ServerException(pojo.code, pojo.msg))
                      //   }else {
                      //       Observable.error<T>(ServerException(pojo.status, pojo.message))
                      //   }
@@ -60,19 +62,19 @@ class RxJavaHttpHelper {
                     if (pojo == null) {
                         return@Func1 Observable.error<T>(NetworkConnectionException("网络错误..."))
                     } else {
-                        when (pojo.status) {
+                        when (pojo.code) {
 
-                            200 -> {
+                            0 -> {
                                 if (pojo.data == null) {
                                     return@Func1 Observable.error<T>(NetworkConnectionException("网络错误..."))
                                 } else {
-                                    return@Func1 createObservable(pojo.data.result)
+                                    return@Func1 createObservable(pojo.data.list)
                                 }
                             }
                           //  203 -> IntentUtils.toSignActivity()
                             else -> return@Func1 Observable.error<T>(ServerException(200, "客户端数据解析异常..."))
                         }
-                        Observable.error(ServerException(pojo.status, pojo.message))
+                        Observable.error(ServerException(pojo.code, pojo.msg))
                     }
                 })
                 observable
@@ -89,19 +91,19 @@ class RxJavaHttpHelper {
                     if (pojo == null) {
                         return@Func1 Observable.error<T>(NetworkConnectionException("网络错误..."))
                     } else {
-                        when (pojo.status) {
+                        when (pojo.code) {
 
-                            200 -> {
+                            0 -> {
                                 if (pojo.data == null) {
                                     return@Func1 Observable.error<T>(NetworkConnectionException("网络错误..."))
                                 } else {
-                                    return@Func1 createObservable(pojo.data.result)
+                                    return@Func1 createObservable(pojo.data.list)
                                 }
                             }
                          //   203 -> IntentUtils.toSignActivity()
                             else -> return@Func1 Observable.error<T>(ServerException(200, "客户端数据解析异常..."))
                         }
-                        Observable.error(ServerException(pojo.status, pojo.message))
+                        Observable.error(ServerException(pojo.code, pojo.msg))
                     }
                 })
                 observable

@@ -16,4 +16,6 @@ public interface Consts {
         int LOAD_MORE_FOOT_KEY = 100000002;
         int LOAD_MORE_HEAD_KEY = 100000003;
     }
+
+    String Token = "Token";
 }

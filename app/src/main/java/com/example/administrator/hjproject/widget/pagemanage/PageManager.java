@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.example.administrator.hjproject.R;
+import com.example.administrator.hjproject.base.App;
 import com.example.administrator.hjproject.utils.DisplayUtil;
 
 /**
@@ -262,11 +263,11 @@ public class PageManager {
     }
 
     public void showError(String retry) {
-       /* if (!isNetWorkAvailable(UIUtils.getContext())) {
+        if (!isNetWorkAvailable(App.getContext())) {
             showNoNetError();
         } else {
             mLoadingAndRetryLayout.setCurrentRetryMessageViewLayout(0, retry);
-        }*/
+        }
     }
 
     public void showNoNetError() {
@@ -314,11 +315,11 @@ public class PageManager {
 
 
     public void showError() {
-        /*if (!isNetWorkAvailable(UIUtils.getContext())) {
+        if (!isNetWorkAvailable(App.getContext())) {
             showNoNetError();
         } else {
             mLoadingAndRetryLayout.setCurrentRetryMessageViewLayout(0, "");
-        }*/
+        }
 
     }
 
@@ -526,6 +527,5 @@ public class PageManager {
     public static PageManager generate(Object activityOrView, PageListener listener) {
         return new PageManager(activityOrView, listener);
     }
-
 
 }

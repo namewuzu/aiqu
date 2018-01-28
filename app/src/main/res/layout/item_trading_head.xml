@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:tools="http://schemas.android.com/tools">
     <data>
 
         <variable
@@ -8,7 +8,7 @@
 
         <variable
             name="itemData"
-            type="Object"/>
+            type="com.example.administrator.hjproject.bean.CensusPojo"/>
 
         <variable
             name="itemPosition"
@@ -31,7 +31,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0.89"
                 android:textColor="#F65549"
                 android:textSize="24dp"/>
 
@@ -54,7 +53,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0.89元"
                 android:textColor="#F65549"
                 android:textSize="15dp"/>
 
@@ -62,7 +60,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:text="2.20%"
                 android:textColor="#F65549"
                 android:textSize="15dp"/>
 
@@ -96,7 +93,6 @@
                 android:layout_marginLeft="8dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="2.20%"
                 android:textColor="#2A2A2A"
                 android:textSize="15dp"/>
 
@@ -106,7 +102,6 @@
                 android:layout_marginLeft="8dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="2.20%"
                 android:textColor="#2A2A2A"
                 android:textSize="15dp"/>
 
@@ -174,7 +169,6 @@
                 android:layout_marginLeft="8dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="2.20%"
                 android:textColor="#2A2A2A"
                 android:textSize="15dp"/>
 
@@ -184,7 +178,6 @@
                 android:layout_marginLeft="8dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="2.20%"
                 android:textColor="#2A2A2A"
                 android:textSize="15dp"/>
 
@@ -306,13 +299,13 @@
                     android:layout_marginTop="15dp"
                     android:background="@drawable/frame_gray_edit">
                     <EditText
+                        android:layout_toLeftOf="@+id/yuan"
                         android:id="@+id/et_money"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@null"
                         android:hint="请输入买入价格"
-                        android:inputType="number"
-                        android:maxEms="7"
+                        android:inputType="number|numberDecimal"
                         android:paddingBottom="12dp"
                         android:paddingLeft="8dp"
                         android:paddingRight="8dp"
@@ -321,6 +314,7 @@
 
 
                     <TextView
+                        android:id="@+id/yuan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -353,13 +347,13 @@
                     android:background="@drawable/frame_gray_edit">
 
                     <EditText
+                        android:layout_toLeftOf="@+id/ge"
                         android:id="@+id/et_count"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@null"
                         android:hint="请输入买入价格"
                         android:inputType="number"
-                        android:maxEms="7"
                         android:paddingBottom="12dp"
                         android:paddingLeft="8dp"
                         android:paddingRight="8dp"
@@ -367,6 +361,7 @@
                         android:textSize="12sp"/>
 
                     <TextView
+                        android:id="@+id/ge"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -508,6 +503,7 @@
 
 
                 <TextView
+                    android:onClick="@{()->viewmodle.buyClick()}"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:gravity="center"
@@ -515,7 +511,7 @@
                     android:text="买入"
                     android:textSize="18sp"
                     android:textColor="@color/colorPrimary"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="35dp"
                     android:layout_width="match_parent"
                     android:layout_height="42dp"/>
 
@@ -547,7 +543,6 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="11dp"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="价格"
@@ -557,7 +552,6 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="11dp"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="数量"
@@ -569,6 +563,12 @@
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/recycview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/recycview2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 

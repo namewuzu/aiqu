@@ -88,7 +88,7 @@
             android:layout_height="1dp"
             android:background="#E5E5E5"/>
 
-        <android.support.v7.widget.RecyclerView
+        <com.example.administrator.hjproject.widget.recyclerview.PullRecyclerView
             android:id="@+id/recycview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

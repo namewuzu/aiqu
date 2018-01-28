@@ -73,8 +73,10 @@ abstract class RxSubscriber<T> : Subscriber<T> {
     }
 
 
-    override fun onNext(t: T) {
-        _onNext(t)
+    override fun onNext(t: T?) {
+        if (t != null) {
+            _onNext(t)
+        }
         onCompleted()
     }
 

@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@{itemData.test}"
+                android:text="@{itemData.price}"
                 android:textColor="#2A2A2A"
                 android:textSize="12sp"/>
 
@@ -45,17 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="0.87"
-                android:textColor="#2A2A2A"
-                android:textSize="12sp"/>
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="0.87"
+                android:text="@{itemData.deal_num}"
                 android:textColor="#2A2A2A"
                 android:textSize="12sp"/>
 
@@ -65,7 +55,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="0.87"
+                android:text="@{itemData.payment}"
+                android:textColor="#2A2A2A"
+                android:textSize="12sp"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{itemData.times}"
                 android:textColor="#2A2A2A"
                 android:textSize="12sp"/>
 

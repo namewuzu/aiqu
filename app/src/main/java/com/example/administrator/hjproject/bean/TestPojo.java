@@ -16,6 +16,11 @@ import java.util.List;
 
 public class TestPojo extends BaseObservable {
     public String test;
+    public String token;
+
+
+    public TestPojo(){
+    }
 
     public TestPojo(String test) {
         this.test = test;
@@ -31,28 +36,33 @@ public class TestPojo extends BaseObservable {
         return list;
     }
 
-    public static class EntrustPojo {
-        public String one;
-        public String two;
-        public String three;
-        public String four;
-        public String five;
+    public static class EntrustPojo extends BaseObservable {
+        public int id;
+        public String type;
+        public String price;
+        public String num;
+        public String deal_num;
+        public String times;
 
-        public EntrustPojo(String one, String two, String three, String four, String five) {
-            this.one = one;
+        public EntrustPojo(){
+
+        }
+
+        /*public EntrustPojo(String id, String type, String price, String num, String deal_num,String times) {
+            this.id = id;
             this.two = two;
             this.three = three;
             this.four = four;
             this.five = five;
-        }
+        }*/
 
-        public static List<EntrustPojo> getEntrustPojo() {
+   /*     public static List<EntrustPojo> getEntrustPojo() {
             List<EntrustPojo> list = new ArrayList<>();
             for (int i = 0; i <= 8; i++) {
                 list.add(new EntrustPojo("买入", "2018-12-12 15:36", "总额麦宝1000个", "0.90元", "剩余麦宝800个"));
             }
             return list;
-        }
+        }*/
     }
 
     public static class HistoryPojo {
@@ -106,5 +116,11 @@ public class TestPojo extends BaseObservable {
         }
     }
 
+
+    public String id;
+    public String price;
+    public String deal_num;
+    public String payment;
+    public String times;
 
 }
