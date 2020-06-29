@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="16dp"
+        android:text="温馨提示"
+        android:textColor="@color/gray_333"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="您还没有授权微信自助提现，请截屏保存本页面，然后打开微信扫一扫，选择从相册读取二维码，完成相应授权，后续自动提现秒到账。"
+        android:textSize="14dp"
+        android:textColor="@color/gray_333"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_code"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="204dp"
+        android:layout_height="204dp"/>
+
+    <TextView
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/shape_text_red_shadow_select"
+        android:gravity="center"
+        android:text="保存二维码至手机"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodle"
+            type="com.diankong.sexstory.mobile.modle.modelview.MainModelView"/>
+
+        <variable
+            name="itemData"
+            type="com.diankong.sexstory.mobile.bean.TestPojo"/>
+
+        <variable
+            name="itemPosition"
+            type="java.lang.Integer"/>
+    </data>
+
+    <RelativeLayout
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/tv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@{itemData.test}"
+            android:textColor="@color/titlecolor"
+            android:textSize="11sp"
+            tools:text="找不到小区"/>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_duration"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@{itemData.test}"
+            android:textColor="@color/titlecolor"
+            android:textSize="11sp"
+            tools:text="找不到小区"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!---->
+
+</layout>

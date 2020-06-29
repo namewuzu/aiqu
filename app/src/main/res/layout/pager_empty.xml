@@ -18,7 +18,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_loading_no_data" />
+            android:src="@mipmap/ic_mrlg" />
 
         <TextView
             android:id="@+id/tv_empty_msg"

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="购买金币"
+            android:textColor="@color/gray_333"
+            android:textSize="18sp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/radiogroup_ItcSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:background="@drawable/white_graylight_selecter"
+                android:layout_weight="1"
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@mipmap/weixinpay"
+                android:drawablePadding="16dp"
+                android:drawableRight="@drawable/radio_button"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dp"
+                android:text="微信支付"
+                android:textColor="@color/gray_333"
+                android:textSize="12sp"/>
+
+            <RadioButton
+                android:background="@drawable/white_graylight_selecter"
+                android:layout_weight="1"
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:button="@null"
+                android:drawableLeft="@mipmap/zhifubaopay"
+                android:drawablePadding="16dp"
+                android:drawableRight="@drawable/radio_button"
+                android:paddingLeft="10dip"
+                android:paddingRight="16dp"
+                android:text="支付宝支付"
+                android:textColor="@color/gray_333"
+                android:textSize="12sp"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+</layout>

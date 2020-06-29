@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="购物车"
+                android:textColor="@color/gray_333"
+                android:textSize="18sp"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:src="@mipmap/free"
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/iv_banner"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/iv_banner"
+            android:layout_above="@+id/ll_commit"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <RelativeLayout
+            android:background="#E7E7E9"
+            android:id="@+id/ll_commit"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <CheckBox
+                android:paddingLeft="8dp"
+                android:button="@drawable/xiadan_checkbox"
+                android:id="@+id/ck"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray_666"
+                android:textSize="14sp"
+                android:text="全选"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_commit"
+                android:id="@+id/rl_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:text="合计:"
+                    android:id="@+id/tv_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/gray_333"
+                    android:textSize="14sp"/>
+
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_s"
+                    android:text="123"
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/red23"
+                    android:textSize="16sp"/>
+
+             </RelativeLayout>
+
+
+            <TextView
+            android:layout_alignParentRight="true"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:id="@+id/tv_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/red23"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="去结算"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

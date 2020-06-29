@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">麦宝</string>
+    <string name="app_name">爱趣</string>
     <string name="txt_downloading">正在下载中</string>
     <string name="txt_new_version">新版本</string>
     <string name="txt_download_complete">下载完成</string>
@@ -9,20 +9,21 @@
     <string name="loading">请稍后...</string>
 
 
+    <string name="zhuce">注册</string>
+    <string name="lijizhuce">立即注册</string>
+    <string name="next">下一步</string>
+    <string name="wangjimima">忘记密码</string>
+    <string name="bdsj">绑定手机</string>
+    <string name="szmm">设置密码</string>
+    <string name="shouru">收入明细</string>
+    <string name="qianbao">钱包明细</string>
+    <string name="follow">+关注</string>
+    <string name="unfollow">取消关注</string>
+    <string name="zzcl">正在处理</string>
+    <string name="txcg">提现成功</string>
+    <string name="txsb">提现失败</string>
+    <string name="ffz">发放中</string>
+    <string name="yff">已发放</string>
 
-    <string name="buy">买入</string>
-    <string name="buycout">买入数量</string>
-    <string name="buyprice">买入价格</string>
-    <string name="typebuycout">请输入买入数量</string>
-    <string name="typebuyprice">请输入买入价格</string>
-    <string name="mai">卖出</string>
-    <string name="maicout">卖出数量</string>
-    <string name="maiprice">卖出价格</string>
-    <string name="typemaicout">请输入卖出数量</string>
-    <string name="typemaiprice">请输入卖出价格</string>
-    <string name="totle">总额麦宝</string>
-    <string name="shengyu">剩余麦宝</string>
-    <string name="ge">个</string>
-    <string name="yuan">元</string>
-    <string name="fen">分</string>
+
 </resources>

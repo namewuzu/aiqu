@@ -5,15 +5,23 @@
     <color name="colorPrimaryDark">#00303F9F</color>
     <color name="colorPrimaryGreen">#30CB50</color>
     <color name="colorPrimaryRed">#FF4949</color>
-    <color name="colorAccent">#1DC9D3</color>
+    <color name="colorAccent">#1BC289</color>
     <color name="textColorSecondary">#110F18</color>
     <color name="gray_D8">#D8D8D8</color>
     <color name="gray_B5">#AAADB5</color>
     <color name="gray_CB5">#AAACB5</color>
+    <color name="gray_666">#666666</color>
+    <color name="gray_333">#333333</color>
+    <color name="gray_999">#999999</color>
+    <color name="gray_eee">#eeeeee</color>
+    <color name="gray_ddd">#dddddd</color>
+    <color name="gray_ff">#FFEDEDED</color>
+    <color name="gold_ff">#FFae8a2c</color>
 
 
 
     <color name="titlecolor">#110F18</color>
+    <color name="banner_back">#F2F2F2</color>
     <color name="namecolor">#555555</color>
     <color name="colorPrimaryblackground">#EBEBEB</color>
     <color name="blackground">#D6D6D6</color>
@@ -30,11 +38,19 @@
     <color name="red59">#FF5959</color>
     <color name="redd6">#FFD6D4</color>
     <color name="redfe">#FE929D</color>
+    <color name="red23">#E22323</color>
+    <color name="red32">#E32323</color>
+    <color name="redba">#E62E31</color>
+    <color name="redcf">#cf5755</color>
+    <color name="redf15">#f15232</color>
+    <color name="redf15f">#F15F5C</color>
+    <color name="redff88">#ff8887</color>
 
     <color name="fredcolor">#FFB5B1</color>
     <color name="redPacketColor">#FFD39B</color>
     <color name="blue60">#6080A1</color>
     <color name="blue90">#90B5FF</color>
+    <color name="blue3f">#3fb0dc</color>
     <color name="blue00">#003200</color>
     <color name="blue19">#190000</color>
     <color name="redPacketBlue">#003200</color>
@@ -61,6 +77,7 @@
     <color name="black_15">#151515</color>
     <color name="black_33">#333333</color>
     <color name="black_9C7">#9C7E0C</color>
+    <color name="yellow_ffd">#ffd772</color>
     <color name="black_615">#615050</color>
     <color name="sex">#FFDBD9</color>
     <!-- 纯黑色 -->
@@ -131,6 +148,24 @@
     <color name="green_19">#19C200</color>
     <color name="red_ff">#FF295E</color>
     <color name="black_2a">#2A2A2A</color>
+    <color name="book_back">#FFF5EE</color>
+    <color name="type_1">#EAB9E2</color>
+    <color name="type_12">#CC13B0</color>
+    <color name="type_2">#A2A7EB</color>
+    <color name="type_22">#0910A1</color>
+    <color name="type_3">#E5B49A</color>
+    <color name="type_32">#C02000</color>
+    <color name="type_4">#F0B1F0</color>
+    <color name="type_42">#E60DE3</color>
+    <color name="type_5">#A5DAA2</color>
+    <color name="type_52">#05A300</color>
+    <color name="type_6">#F6B7B7</color>
+    <color name="type_62">#FF2E2E</color>
+
+    <color name="divider">#ffd2d2d2</color>
+
+    <color name="black_content">#7a7a7a</color>
+    <color name="title_red">#f93d47</color>
 
 
     <color name="common_pressed">#20000000</color>  <!--白色背景按下去的颜色-->

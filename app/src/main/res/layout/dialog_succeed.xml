@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorPrimary"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/succeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        android:textColor="@color/gray_333"
+        android:text="加入购物车成功"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_join"
+        android:layout_marginTop="36dp"
+        android:textSize="14sp"
+        android:textColor="#FD7A06"
+        android:text="查看我的购物车>>"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_colse"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_text_red_pink_shadow_select_radius_6"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center_horizontal"
+            android:text="关闭"
+            android:textColor="@color/red23"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_gocar"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/shape_text_red_shadow_select_radius_6"
+            android:gravity="center_horizontal"
+            android:text="去结算"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="自拍认证"
+                android:textColor="@color/gray_333"
+                android:textSize="18sp"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ic_renzhengtongguo"/>
+
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="可以接视频赚钱啦！"
+            android:textColor="@color/gray_333"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="设置金币后，接视频可以赚金币，金币可提现到微信"
+            android:textColor="@color/gray_666"
+            android:textSize="14dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="当前设置："
+                    android:textColor="@color/gray_333"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/coin"
+                    android:layout_marginLeft="8dp"
+                    android:text="10金币/分钟"
+                    android:textColor="@color/red23"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="已获得："
+                    android:textColor="@color/gray_333"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/coin_ing"
+                    android:layout_marginLeft="8dp"
+                    android:text="1000金币"
+                    android:textColor="@color/red23"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bg"
+            android:gravity="center"
+            android:hint="可在此修改您设置的金币数"
+            android:inputType="number"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/gray_333"
+            android:textSize="14sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/bt_back"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_text_red_shadow_select"
+                android:text="返回"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
+
+
+            <Button
+                android:id="@+id/bt_commit"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_text_red_shadow_select"
+                android:text="确定修改"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/iv_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/toolbar"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/user_back"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:background="@drawable/white_blue_circle_selector"
+                    android:id="@+id/iv_back"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/back_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_info"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:background="@drawable/frame_white"
+                        android:text="编辑资料"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/sv"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-30dp"
+                android:src="@mipmap/ic_mrtx"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_vp"
+                android:layout_marginTop="-20dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_333"
+                    android:textSize="16sp"/>
+
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="8dp"-->
+                    <!--android:layout_marginTop="13dp">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_id"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:textColor="@color/gray_666"-->
+                        <!--android:textSize="12sp"/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_funs"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:textColor="@color/gray_666"-->
+                        <!--android:textSize="12sp"/>-->
+
+                <!--</RelativeLayout>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/gray_333"
+                        android:textSize="12sp"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_focus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/shape_text_red_f1_shadow_select"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="2dp"
+                        android:text="关注"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ll_bottom"
+            android:layout_below="@+id/ll_content"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/colorPrimary"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="相册"
+                            android:textColor="@color/gray_999"
+                            android:textSize="14sp"/>
+
+
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="16dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="@dimen/phoenix_dimen_16"
+                        android:src="@mipmap/right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/colorPrimary"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="动态"
+                            android:textColor="@color/gray_999"
+                            android:textSize="14sp"/>
+
+
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="16dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="@dimen/phoenix_dimen_16"
+                        android:src="@mipmap/right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="个性签名"
+                        android:textColor="@color/gray_999"
+                        android:textSize="14sp"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_gexing1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:text=""
+                        android:textColor="@color/gray_333"
+                        android:textSize="14sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv_gexing2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:text="这个人太懒了，什么也没留下..."
+                        android:textColor="@color/gray_ddd"
+                        android:textSize="14sp"
+                        android:visibility="gone"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="基本资料"
+                        android:textColor="@color/gray_999"
+                        android:textSize="14sp"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/shape_text_userinfo_shadow_select"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="性别"
+                        android:textColor="@color/gray_666"
+                        android:textSize="10sp"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/shape_text_userinfo_shadow_select"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="年龄"
+                        android:textColor="@color/gray_666"
+                        android:textSize="10sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_monthlyIncome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/shape_text_userinfo_shadow_select"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="月收入"
+                        android:textColor="@color/gray_666"
+                        android:textSize="10sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/shape_text_userinfo_shadow_select"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="工作"
+                        android:textColor="@color/gray_666"
+                        android:textSize="10sp"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_hobby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="爱    好"
+                        android:textColor="@color/gray_999"
+                        android:textSize="14sp"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_hobby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="@color/gray_333"
+                        android:textSize="14sp"/>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_wxCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="常驻地"
+                        android:textColor="@color/gray_999"
+                        android:textSize="14sp"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_wxCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="@color/gray_333"
+                        android:textSize="14sp"/>
+
+
+                </LinearLayout>
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/colorPrimary"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:padding="16dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:text="聊天能力"-->
+                        <!--android:textColor="@color/gray_999"-->
+                        <!--android:textSize="14sp"/>-->
+
+
+                    <!--<android.support.v7.widget.RecyclerView-->
+                        <!--android:id="@+id/re1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:visibility="gone"/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_no_talk"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginLeft="16dp"-->
+                        <!--android:text="还未设置标签"-->
+                        <!--android:textColor="@color/gray_ddd"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:visibility="gone"/>-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/colorPrimary"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:padding="16dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:text="性格特点"-->
+                        <!--android:textColor="@color/gray_999"-->
+                        <!--android:textSize="14sp"/>-->
+
+
+                    <!--<android.support.v7.widget.RecyclerView-->
+                        <!--android:id="@+id/re2"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:visibility="gone"/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_no_character"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginLeft="16dp"-->
+                        <!--android:text="还未选择性格"-->
+                        <!--android:textColor="@color/gray_ddd"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:visibility="gone"/>-->
+
+
+                <!--</LinearLayout>-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/colorPrimary"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:padding="16dp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:text="常去场所"-->
+                        <!--android:textColor="@color/gray_999"-->
+                        <!--android:textSize="14sp"/>-->
+
+
+                    <!--<android.support.v7.widget.RecyclerView-->
+                        <!--android:id="@+id/re3"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:visibility="gone"/>-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_no_place"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginLeft="16dp"-->
+                        <!--android:text="还未选择常去场所"-->
+                        <!--android:textColor="@color/gray_ddd"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:visibility="gone"/>-->
+
+
+                <!--</LinearLayout>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:drawableLeft="@mipmap/lw"
+                        android:drawablePadding="4dp"
+                        android:text="收到的礼物"
+                        android:textColor="@color/gray_999"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="80dp"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <ImageView
+
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/phoenix_dimen_16"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_chat"
+            android:text="发消息"
+            android:textSize="16dp"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/go_vodie"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@mipmap/ic_video"-->
+            <!--android:textSize="16dp"/>-->
+
+
+        <ImageView
+            android:id="@+id/send_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_gift"
+            android:text="送礼物"
+            android:textSize="16dp"/>
+
+
+    </RelativeLayout>
+</layout>

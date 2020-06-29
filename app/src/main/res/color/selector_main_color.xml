@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 首页底部 rb 切换时的颜色变化 -->
+
+
+    <item android:color="@color/black_content" android:state_selected="false"/>
+    <item android:color="@color/title_red" android:state_selected="true"/>
+
+
+
+</selector>

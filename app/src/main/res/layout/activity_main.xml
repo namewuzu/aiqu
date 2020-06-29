@@ -7,33 +7,151 @@
 
     <data>
         <variable name="viewmodle"
-                  type="com.example.administrator.hjproject.modle.modelview.MainModelView"/>
+                  type="com.diankong.sexstory.mobile.modle.modelview.MainModelView"/>
     </data>
 
     <LinearLayout
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
         android:id="@+id/ll_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fitsSystemWindows="true"
-        android:orientation="vertical"
-        tools:context="com.example.administrator.hjproject.modle.activity.MainActivity">
+        android:orientation="vertical">
 
-        <com.hjm.bottomtabbar.BottomTabBar
-            android:id="@+id/bottom_tab_bar"
+        <!--<com.hjm.bottomtabbar.BottomTabBar-->
+            <!--android:id="@+id/bottom_tab_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:tab_divider_background="@color/gray_99"-->
+            <!--app:tab_divider_height="0.5dp"-->
+            <!--app:tab_font_size="6sp"-->
+            <!--app:tab_img_font_padding="2dp"-->
+            <!--app:tab_img_height="24dp"-->
+            <!--app:tab_img_width="24dp"-->
+            <!--app:tab_isshow_divider="true"-->
+            <!--app:tab_padding_bottom="5dp"-->
+            <!--app:tab_padding_top="8dp"-->
+            <!--app:tab_selected_color="@color/gray_333"-->
+            <!--app:tab_unselected_color="#BDBDBD" />-->
+        <!--<FrameLayout-->
+            <!--android:id="@+id/fl_home"-->
+            <!--android:layout_above="@+id/bottom_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+        <!--</FrameLayout>-->
+
+        <!--<View-->
+            <!--android:layout_below="@+id/fl_home"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:background="@color/gray_99"/>-->
+
+
+        <!--<com.diankong.sexstory.mobile.widget.BottomAppBar-->
+            <!--android:id="@+id/bottom_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:gravity="center"-->
+            <!--app:mTextNormalColor="#BDBDBD"-->
+            <!--app:mTextSelectColor="@color/gray_333"-->
+            <!--app:mtextSize="6dp"/>-->
+
+
+
+
+        <LinearLayout
+            android:id="@+id/tb"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:tab_divider_background="@color/gray_99"
-            app:tab_divider_height="0.5dp"
-            app:tab_font_size="3sp"
-            app:tab_img_font_padding="0dp"
-            app:tab_img_height="30dp"
-            app:tab_img_width="30dp"
-            app:tab_isshow_divider="true"
-            app:tab_padding_bottom="5dp"
-            app:tab_padding_top="8dp"
-            app:tab_selected_color="@color/red49"
-            app:tab_unselected_color="@color/black" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:id="@+id/main_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/main_rb_work"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/selector_main_work"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:text="社区"
+                android:textAllCaps="false"
+                android:textColor="@color/selector_main_color"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <Button
+                    android:id="@+id/main_rb_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:button="@null"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/selector_main_message"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:text="消息"
+                    android:textAllCaps="false"
+                    android:textColor="@color/selector_main_color"
+                    android:textSize="12sp" />
+
+                <!--红点显示未读消息-->
+                <TextView
+                    android:id="@+id/tv_main_unread_point"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignRight="@+id/main_rb_message"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_red_circle"/>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/main_rb_user"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/selector_main_user"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:text="我的"
+                android:textAllCaps="false"
+                android:textColor="@color/selector_main_color"
+                android:textSize="12sp" />
+        </LinearLayout>
 
     </LinearLayout>
 </layout>

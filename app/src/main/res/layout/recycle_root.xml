@@ -29,20 +29,30 @@
               android:layout_height="wrap_content"
               android:orientation="vertical">
 
-    <com.example.administrator.hjproject.widget.recyclerview.MySwipeToRefresh
+    <com.diankong.sexstory.mobile.widget.recyclerview.MySwipeToRefresh
 
         android:id="@+id/mySwipe"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/swipe_target"
+        <FrameLayout
+            android:id="@+id/fl_content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorPrimary"
-            ></android.support.v7.widget.RecyclerView>
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/rl_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/swipe_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                ></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </FrameLayout>
 
 
-    </com.example.administrator.hjproject.widget.recyclerview.MySwipeToRefresh>
+    </com.diankong.sexstory.mobile.widget.recyclerview.MySwipeToRefresh>
 
 </LinearLayout>

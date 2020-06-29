@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.diankong.sexstory.mobile.bean.GroupTagsPojo"/>
+
+        <variable
+            name="pojo"
+            type="GroupTagsPojo"/>
+    </data>
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/tag_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@{pojo.select==1?@drawable/frame_red:@drawable/frame_org}"
+        android:textColor="@{pojo.select==1?@color/colorPrimary:@color/redf15f}"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textSize="14sp">
+
+
+
+        <!--android:background="@{pojo.select==1? @drawable/red_corner_5 : @drawable/frame_gray  android:background="@color/colorPrimary"}"-->
+    </TextView>
+</layout>

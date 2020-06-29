@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/iv_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_mrlg"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="玫瑰花"
+        android:textColor="@color/gray_333"
+        android:textSize="14sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="101010金币"
+        android:textColor="@color/red23"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:layout_marginBottom="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:gravity="center"
+        android:background="@drawable/shape_text_red_f1_shadow_select"
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="立即赠送"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"/>
+
+
+</LinearLayout>

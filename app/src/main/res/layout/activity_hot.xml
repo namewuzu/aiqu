@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="话题"
+            android:textColor="@color/gray_333"
+            android:textSize="16sp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:recyclerClipToPadding="true"
+            app:scrollbarStyle="insideOverlay"
+            app:scrollbars="none" />
+
+
+        <ImageView
+            android:background="@mipmap/ic_public"
+            android:id="@+id/iv_fabu"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+</layout>

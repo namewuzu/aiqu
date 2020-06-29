@@ -7,11 +7,11 @@
 
         <variable
             name="viewmodle"
-            type="com.example.administrator.hjproject.modle.modelview.secendModelView"/>
+            type="com.diankong.sexstory.mobile.modle.modelview.MainModelView"/>
 
         <variable
             name="itemData"
-            type="com.example.administrator.hjproject.bean.TestPojo"/>
+            type="com.diankong.sexstory.mobile.bean.TestPojo"/>
 
         <variable
             name="itemPosition"

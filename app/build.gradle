@@ -3,38 +3,103 @@ apply plugin: 'kotlin-android'
 //apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 27
+    buildToolsVersion "27"
     defaultConfig {
-        applicationId "com.example.administrator.hjproject"
-        minSdkVersion 19
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        applicationId "com.diankong.sexstory.mobile"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 8
+        versionName "2.8"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        renderscriptTargetApi 24
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+
+
+        ndk {
+            abiFilters "mips","mips64","x86_64","armeabi","armeabi-v7a","arm64-v8a"
+        }
+        sourceSets {
+            main {
+                jniLibs.srcDirs = ['libs']
+            }
+        }
+
     }
+
+
+    signingConfigs {
+
+        debug {
+//            storeFile file('../debug.keystore')
+//            storePassword "android"
+//            keyAlias "androiddebugkey"
+//            keyPassword "android"
+            storeFile file('../wezhuan.jks')
+            storePassword "android"
+            keyAlias "key0"
+            keyPassword "android"
+
+        }
+
+        release {
+            storeFile file('../wezhuan.jks')
+            storePassword "android"
+            keyAlias "key0"
+            keyPassword "android"
+        }
+
+
+    }
+
+    sourceSets{
+        main{
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/libs']
+        }
+    }
+
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources false
+            zipAlignEnabled true
+            debuggable true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 
     dataBinding {
         enabled = true
     }
-
+    packagingOptions {
+        //导入的库 跟之前的库有些os是重复的
+        exclude 'META-INF/rxjava.properties'
+    }
+//    repositories {
+//        flatDir {
+//            dirs 'libs' //this way we can find the .aar file in libs folder
+//        }
+//    }
 }
-def supportVersion = "25.3.1"
+def supportVersion = "27.1.1"
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+//    provided fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:support-v4:' + supportVersion
     compile 'com.android.support:appcompat-v7:' + supportVersion
     compile 'com.android.support:support-v13:' + supportVersion
-    compile 'com.android.support:appcompat-v7:' + supportVersion
     compile 'com.android.support:design:' + supportVersion
     compile 'com.android.support:cardview-v7:' + supportVersion
     compile 'com.android.support:recyclerview-v7:' + supportVersion
@@ -42,16 +107,76 @@ dependencies {
     //底部选择
     compile 'com.lovedise:permissiongen:0.1.1'
     compile 'com.github.dfqin:grantor:2.1.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.1.2-5'
+//    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.1.51'
     compile 'com.orhanobut:logger:2.1.1'
     compile 'com.google.code.gson:gson:2.8.0'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
     compile 'com.lzy.net:okrx:0.1.2'
-    compile 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
+    compile ('org.ligboy.retrofit2:converter-fastjson-android:2.1.0'){
+        exclude group: "com.alibaba:fastjson"
+    }
+    //    compile 'com.hjm:BottomTabBar:1.1.2'
+    implementation 'com.android.support:multidex:1.0.0'
     compile 'com.hjm:BottomTabBar:1.1.2'
+    implementation 'com.github.truemi:bottomBar:v1.1'
+    compile 'com.umeng.sdk:common:latest.integration'
+    compile 'com.umeng.sdk:analytics:latest.integration'
+    //    //PushSDK必须依赖基础组件库，所以需要加入对应依赖
+    //    compile 'com.umeng.sdk:common:1.5.3'
+    ////PushSDK必须依赖utdid库，所以需要加入对应依赖
+    //    compile 'com.umeng.sdk:utdid:1.1.5.3'
+    ////PushSDK
+    //    compile 'com.umeng.sdk:push:4.2.0'
+    //更新APK
+    compile 'com.youth.banner:banner:1.4.10'
+    compile 'com.teprinciple:updateapputils:1.5.1'
     testCompile 'junit:junit:4.12'
     kapt 'com.android.databinding:compiler:2.3.3'
+    compile 'com.zhouyou:rxeasyhttp:2.1.2'
+    //网络请求
+    compile 'com.jude:easyrecyclerview:4.4.2'
+    implementation files('libs/flymeapi.jar')
+    implementation files('libs/parse-android-1.13.0.jar')
+    implementation files('libs/SocialSDK_QQ_Simplify.jar')
+    implementation files('libs/SocialSDK_sms.jar')
+    implementation files('libs/tbs_sdk_thirdapp_v3.2.0.1104_43200_sharewithdownload_withfilereader_withoutGame_obfs_20170609_115346.jar')
+    implementation files('libs/umeng-share-wechat-simplify-6.9.4.jar')
+    implementation files('libs/umeng-share-core-6.9.4.jar')
+    implementation files('libs/umeng-sharetool-6.9.4.jar')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+//    compile(name:'pauthSDK-2.0.0-20190117', ext:'aar')
+    compile 'com.commit451:PhotoView:1.2.4'
+    api 'liji.library.dev:citypickerview:4.2.1'
+
+    compile 'com.contrarywind:Android-PickerView:4.1.9'
+
+    implementation'com.aliyun.dpa:oss-android-sdk:+'
+
+    implementation'com.squareup.okhttp3:okhttp:3.4.1'
+
+    implementation'com.squareup.okio:okio:1.9.0'
+
+    implementation 'com.github.guoxiaoxing:phoenix:1.0.15'
+
+
+//    api 'cn.rongcloud.sdk:im_kit:2.9.17'
+//    //im_kit必须依赖im_lib，所以需要加入对应依赖
+//    api 'cn.rongcloud.sdk:im_lib:2.9.17'
+
+//    compile (name: 'alipaySdk-15.6.8-20191021122514', ext: 'aar')
+
+    compile project(':CallKit')
+    compile project(':CallLib')
+    compile project(':IMLib')
+    compile project(':IMKit')
+
+    compile 'com.wang.avi:library:2.1.3'
 }
+
+apply plugin: 'kotlin-android-extensions'

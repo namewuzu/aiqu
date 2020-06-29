@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="自拍认证"
+            android:textColor="@color/gray_333"
+            android:textSize="18sp"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:textStyle="bold"
+        android:text="温馨提示"
+        android:textSize="15sp"
+        android:textColor="@color/gray_333"
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingBottom="4dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="1.通过自拍认证，可在首页活跃区使用置顶排名功能"
+        android:textSize="15sp"
+        android:textColor="@color/gray_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="2.通过自拍认证，可设置50-500金币/分钟"
+        android:textSize="15sp"
+        android:textColor="@color/gray_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="3.认证照片须为本人正面全脸露出照"
+        android:textSize="15sp"
+        android:textColor="@color/gray_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="4.认证照片须清晰可辨"
+        android:textSize="15sp"
+        android:textColor="@color/gray_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="5.本照片仅用于认证，官方对照片保密"
+        android:textSize="15sp"
+        android:textColor="@color/gray_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/iv_photo"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_renzheng"
+        android:layout_width="82dp"
+        android:layout_height="82dp"/>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:text="(请模仿自拍手势示例拍照，否则不会通过认证)"
+        android:textSize="15sp"
+        android:textColor="@color/red23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/zipai"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/shape_text_red_f1_shadow_select"
+        android:text="马上自拍"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/bt_commit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/shape_text_red_f1_shadow_select"
+        android:text="提交"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"/>
+
+
+
+
+</LinearLayout>
+</layout>

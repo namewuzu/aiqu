@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\project\\SexStroy\\CallKit\\build\\intermediates\\res\\merged\\release\\raw\\voip_incoming_ring.mp3",
+        "source": "D:\\project\\SexStroy\\CallKit\\src\\main\\res\\raw\\voip_incoming_ring.mp3"
+    },
+    {
+        "merged": "D:\\project\\SexStroy\\CallKit\\build\\intermediates\\res\\merged\\release\\raw\\voip_network_error_sound.wav",
+        "source": "D:\\project\\SexStroy\\CallKit\\src\\main\\res\\raw\\voip_network_error_sound.wav"
+    },
+    {
+        "merged": "D:\\project\\SexStroy\\CallKit\\build\\intermediates\\res\\merged\\release\\raw\\voip_outgoing_ring.mp3",
+        "source": "D:\\project\\SexStroy\\CallKit\\src\\main\\res\\raw\\voip_outgoing_ring.mp3"
+    }
+]

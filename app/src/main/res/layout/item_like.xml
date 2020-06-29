@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodle"
+            type="com.diankong.sexstory.mobile.modle.modelview.BookDetailsViewModle"/>
+
+        <variable
+            name="itemData"
+            type="com.diankong.sexstory.mobile.bean.BookInfoPojo"/>
+
+        <variable
+            name="itemPosition"
+            type="java.lang.Integer"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="70dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxEms="5"
+            android:id="@+id/tv_title"
+            android:layout_marginTop="2dp"
+            android:text="@{itemData.articlename}"
+            android:textSize="12sp"
+            android:textColor="@color/titlecolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:visibility="gone"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxEms="4"
+            android:id="@+id/tv_author"
+            android:layout_marginTop="4dp"
+            android:text="@{itemData.author}"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <!---->
+
+</layout>

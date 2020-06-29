@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:countdown="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="24dp"
+                  android:layout_marginBottom="48dp"
+                  android:orientation="vertical">
+        <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+
+        <!--<RelativeLayout-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:id="@+id/daojishi_rl"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp">-->
+
+
+            <!--<TextView-->
+                <!--android:textColor="@color/gray_333"-->
+                <!--android:id="@+id/describe_tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="商品更新时间 "-->
+                <!--android:textSize="16sp"/>-->
+
+            <!--<com.diankong.sexstory.mobile.widget.CountDownView-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:id="@+id/cdv"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toRightOf="@+id/describe_tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--countdown:setDrawable_sub="@mipmap/xuanzhong"-->
+                <!--android:layout_height="match_parent"/>-->
+
+
+         <!--</RelativeLayout>-->
+
+        <!--<com.jude.easyrecyclerview.EasyRecyclerView-->
+            <!--android:id="@+id/recyclerView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+
+    </LinearLayout>
+</layout>

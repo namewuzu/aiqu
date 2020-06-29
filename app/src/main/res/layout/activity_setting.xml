@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="设置中心"
+                android:textColor="@color/gray_333"
+                android:textSize="18sp"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:background="@color/gray_ff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+
+            <com.diankong.sexstory.mobile.widget.SettingButton
+                android:id="@+id/tv_clern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:subTitleColor="@color/gray_333"
+                app:tText="退出授权"
+                app:tTextColor="@color/gray_333"
+            />
+
+
+            <com.diankong.sexstory.mobile.widget.SettingButton
+                android:id="@+id/tv_clean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:subTitleColor="@color/gray_333"
+                app:tText="联系客服"
+                app:tTextColor="@color/gray_333"
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_eee"/>
+
+            <com.diankong.sexstory.mobile.widget.SettingButton
+                android:visibility="gone"
+                android:id="@+id/tv_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:subText="1.0.0"
+                app:subTitleColor="@color/gray_333"
+                app:tText="更新版本"
+                app:tTextColor="@color/gray_333"
+            />
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_eee"/>
+
+            <com.diankong.sexstory.mobile.widget.SettingButton
+                android:id="@+id/tv_versionCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:subTitleColor="@color/gray_333"
+                app:tText="版本信息"
+                app:tTextColor="@color/gray_333"
+            />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_eee"/>
+
+
+            <com.diankong.sexstory.mobile.widget.SettingButton
+                android:id="@+id/tv_yijian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:subTitleColor="@color/gray_333"
+                app:tText="反馈意见"
+                app:tTextColor="@color/gray_333"
+            />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_eee"/>
+
+            <com.diankong.sexstory.mobile.widget.SettingButton
+                android:visibility="gone"
+                android:id="@+id/tv_psd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:subTitleColor="@color/gray_333"
+                app:tText="退出登录"
+                app:tTextColor="@color/gray_333"
+            />
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_eee"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</layout>

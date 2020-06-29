@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimary"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="玄幻"
+                android:textColor="@color/gray_333"
+                android:textSize="18sp"/>
+
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/qy_ic_title_layout_search"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:recyclerClipToPadding="true"
+            app:scrollbarStyle="insideOverlay"
+            app:scrollbars="none" />
+
+
+    </LinearLayout>
+</layout>

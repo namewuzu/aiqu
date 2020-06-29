@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodle"
+            type="com.diankong.sexstory.mobile.modle.modelview.TypeViewModle"/>
+
+        <variable
+            name="itemData"
+            type="com.diankong.sexstory.mobile.bean.BookListPojo"/>
+
+        <variable
+            name="itemPosition"
+            type="java.lang.Integer"/>
+    </data>
+    <!--android:onClick="@{()->viewmodle.onItemClick(itemPosition,itemData)}"-->
+    <LinearLayout
+
+        android:id="@+id/ll_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{itemData.typeName}"
+                android:textColor="@color/titlecolor"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/gray_99"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            app:imageUrl = "@{itemData.imgUrl}"
+            android:id="@+id/iv_icon"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+    <!---->
+
+</layout>

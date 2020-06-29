@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="EasyAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="EasyAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ab__gray_light</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">?android:attr/colorBackground</item>
+        <item name="android:colorBackground">?android:attr/colorBackground</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowLightStatusBar"
+              tools:targetApi="m">true
+        </item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/night_one_text_color</item>
+       <!-- <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>-->
+        <!--<item name="dayNightBackground">@color/day_backgroup_color</item>
+        <item name="dayNightOneTextColor">@color/day_one_text_color</item>
+        <item name="dayNightTwoTextColor">@color/day_two_text_color</item>
+        <item name="dayNightThreeTextColor">@color/day_three_text_color</item>
+        <item name="dayNightBackgroundDrawable">@color/day_backgroup_color</item>
+        <item name="swirl_ridgeColor">@color/textColorSecondary</item>
+        <item name="swirl_errorColor">@color/colorPrimaryRed</item>-->
+    </style>
+
+    <style name="MasterDetailsActivity" parent="AppTheme.NoActionBar">
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+</resources>

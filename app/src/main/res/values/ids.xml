@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sLeftIconId" type="id"/>
+    <item name="sRightIconId" type="id"/>
+    <item name="sCenterBaseLineId" type="id"/>
+    <item name="sLeftBottomTextId" type="id"/>
+    <item name="swipe_target" type="id"/>
+    <item name="swipe_refresh_header" type="id"/>
+    <item name="swipe_load_more_footer" type="id"/>
+
+
+    <!-- Messages IDs -->
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <!--轮播图 -->
+    <item name="autoloopswitch_viewpager_id" type="id"></item>
+    <item name="autoloopswitch_lable_image_id" type="id"></item>
+    <item name="autoloopswitch_title_textview_id" type="id"></item>
+    <item name="autoloopswitch_pagershow_id" type="id"></item>
+
+
+    <item name="delete_conversation" type="id"></item>
+    <item name="delete_conversation_messages" type="id"></item>
+
+</resources>

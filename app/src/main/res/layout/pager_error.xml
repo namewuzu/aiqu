@@ -22,7 +22,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:src="@mipmap/ic_loading_error"
+                android:src="@mipmap/ic_mrlg"
                 android:visibility="visible" />
 
 
@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
-                android:text="页面加载失败"
+                android:text="页面加载中。。。"
                 android:textColor="@color/gray_99"
                 android:textSize="15sp" />
         </LinearLayout>

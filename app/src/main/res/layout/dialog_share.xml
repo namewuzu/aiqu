@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_see"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="分享给我的好友"
+            android:textColor="@color/gray_333"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/share_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_see"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="分享给我的好友"
+            android:textColor="@color/gray_666"
+            android:textSize="14sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/share_title"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
+
+
+            <ImageView
+                android:id="@+id/wx_hy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/ai_home_share_weixin"/>
+
+            <ImageView
+                android:id="@+id/wx_pyq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/ai_home_share_fir"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginTop="160dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_mrlg"/>
+
+</RelativeLayout>

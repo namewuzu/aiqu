@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<LinearLayout-->
+        <!--android:paddingTop="24dp"-->
+        <!--android:background="@color/red23"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/red23">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="社区"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="18sp"/>-->
+
+        <!--</android.support.v7.widget.Toolbar>-->
+
+        <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:id="@+id/appbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+        <!--<RelativeLayout-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<RelativeLayout-->
+                <!--android:padding="8dp"-->
+                <!--android:id="@+id/head"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="@dimen/phoenix_dimen_16"-->
+                <!--android:text="推荐话题"-->
+                <!--android:textColor="@color/gray_333"-->
+                <!--android:textSize="14sp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_more"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginRight="@dimen/phoenix_dimen_16"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:text="更多话题>"-->
+                <!--android:textColor="@color/gray_666"-->
+                <!--android:textSize="12sp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+            <!--</RelativeLayout>-->
+
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginLeft="@dimen/phoenix_dimen_16"-->
+                <!--android:layout_marginRight="@dimen/phoenix_dimen_16"-->
+                <!--android:layout_below="@+id/head"-->
+                <!--android:id="@+id/recyclerView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+
+
+        <!--</RelativeLayout>-->
+        <!--</android.support.design.widget.AppBarLayout>-->
+        <!--<android.support.design.widget.TabLayout-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:id="@+id/tabs"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:tabIndicatorColor="@color/red23"-->
+            <!--app:tabIndicatorHeight="1dp"-->
+            <!--app:tabMode="scrollable"-->
+            <!--app:tabSelectedTextColor="@color/red23"-->
+            <!--app:tabTextColor="@color/gray_333"/>-->
+
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:id="@+id/vp_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:background="@color/red23"
+        android:paddingTop="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red23">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="社区"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"/>
+
+
+
+            <ImageView
+                android:id="@+id/iv_massage"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/xiaoxi"/>
+
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_serch_seiqu"/>
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <LinearLayout
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_jiaoyou"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/ic_firend_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:text="真心交友"
+                        android:textColor="@color/gray_333"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_liaozhu"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/ic_firend_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:text="颜值聊主"
+                        android:textColor="@color/gray_333"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_lianren"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/ic_firend_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:text="虚拟恋人"
+                        android:textColor="@color/gray_333"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+            android:padding="8dp"
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:drawablePadding="4dp"
+                android:drawableLeft="@mipmap/ic_title_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/phoenix_dimen_16"
+            android:text="推荐话题"
+            android:textColor="@color/gray_333"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+            <TextView
+            android:id="@+id/tv_more"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/phoenix_dimen_16"
+            android:layout_alignParentRight="true"
+            android:text="更多话题>"
+            android:textColor="@color/gray_666"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/phoenix_dimen_16"
+            android:layout_marginRight="@dimen/phoenix_dimen_16"
+            android:layout_below="@+id/head"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TabLayout
+            android:background="@color/colorPrimary"
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/red23"
+            app:tabIndicatorHeight="1dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/red23"
+            app:tabTextColor="@color/gray_333"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:background="@color/colorPrimary"
+            android:id="@+id/vp_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+
+</layout>

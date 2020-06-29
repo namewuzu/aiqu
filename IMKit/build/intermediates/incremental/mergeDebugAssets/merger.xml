@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\project\SexStroy\IMKit\src\main\assets"><file name="combine.json" path="D:\project\SexStroy\IMKit\src\main\assets\combine.json"/></source><source path="D:\project\SexStroy\IMKit\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\project\SexStroy\IMKit\src\debug\assets"/></dataSet></merger>

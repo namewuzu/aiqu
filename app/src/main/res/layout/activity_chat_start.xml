@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="聊天能力"
+                android:textColor="@color/gray_333"
+                android:textSize="18sp"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <TextView
+            android:text="选择标签"
+            android:textSize="14sp"
+            android:textColor="@color/gray_333"
+            android:padding="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.diankong.sexstory.mobile.widget.tagcloud.TagCloudLayout
+            android:id="@+id/tcl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/phoenix_dimen_16"
+            android:layout_marginRight="@dimen/phoenix_dimen_16"
+            app:lineSpacing="@dimen/phoenix_dimen_5"
+            app:tagSpacing="6dp"/>
+
+
+        <TextView
+            android:layout_marginTop="24dp"
+            android:id="@+id/commit"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:layout_marginBottom="46dp"
+            android:text="保存"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_text_red_f1_shadow_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+</layout>

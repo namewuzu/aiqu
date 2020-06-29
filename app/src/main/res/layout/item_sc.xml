@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/iv_wechat"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/tv_name"
+                    android:background="#A2A7EB"/>
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_bt_f"
+                    android:drawablePadding="4dp"
+                    android:text="男性用品"
+                    android:textColor="#0910A1"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:background="#A2A7EB"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/shape_text_red_shadow_normal"
+                android:textSize="10sp"
+                android:text="更多->"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+</layout>

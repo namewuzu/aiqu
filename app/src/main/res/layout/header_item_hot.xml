@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_mrlg"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"/>
+
+        <TextView
+            android:layout_marginBottom="24dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="这里是你倾诉得到树洞，快来分享你的心情感受吧......"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingTop="@dimen/phoenix_dimen_16"
+        android:paddingBottom="@dimen/phoenix_dimen_16"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/count1"
+                android:text="658"
+                android:textSize="16sp"
+                android:textColor="@color/gray_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/recovery_default_margin_8dp"
+                android:text="条动态"
+                android:textSize="14sp"
+                android:textColor="@color/gray_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_999"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/count2"
+                android:text="658"
+                android:textSize="16sp"
+                android:textColor="@color/gray_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/recovery_default_margin_8dp"
+                android:text="人参与"
+                android:textSize="14sp"
+                android:textColor="@color/gray_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_999"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/count3"
+                android:text="658"
+                android:textSize="16sp"
+                android:textColor="@color/gray_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/recovery_default_margin_8dp"
+                android:text="条互动"
+                android:textSize="14sp"
+                android:textColor="@color/gray_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="@dimen/phoenix_dimen_16"
+        android:textColor="@color/gray_333"
+        android:textSize="14sp"
+        android:text="热门话题"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/phoenix_dimen_16"
+        android:layout_marginBottom="@dimen/phoenix_dimen_16"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/gray_eee"/>
+
+</LinearLayout>
+</layout>
